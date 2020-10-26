@@ -1,0 +1,82 @@
+public String construct_image_url(String passed_SetInitial,
+			String passed_SetNumber) {
+
+		String Url = null;
+		String modified_setNumber = null;
+
+		if (passed_SetInitial.toLowerCase().contains(";")
+				&& passed_SetNumber.toLowerCase().contains(";")) {
+			int number_of_semicolons = 0;
+			for (int i = 0; i < passed_SetInitial.length(); i++) {
+				if (passed_SetInitial.charAt(i) == ';') {
+					number_of_semicolons++;
+				}
+			}
+
+			// Increase semicolon counter by 1 more to allow the loop to include
+			// all set initials
+			// Example: setini = "test1;test2;test3". This string has 2
+			// semi-colons which means 3 set initials
+
+			number_of_semicolons++;
+
+			ArrayList<String> split_initials = new ArrayList<String>();
+			ArrayList<String> split_setNumbers = new ArrayList<String>();
+
+			StringTokenizer setinitial_tokens = new StringTokenizer(
+					passed_SetInitial, ";");
+			StringTokenizer setNumber_tokens = new StringTokenizer(
+					passed_SetNumber, ";");
+
+			for (int i2 = 0; i2 < number_of_semicolons; i2++) {
+				split_initials.add(setinitial_tokens.nextToken());
+				split_setNumbers.add(setNumber_tokens.nextToken());
+			}
+
+			if (split_setNumbers.get(0).matches("[0-9]+")) {
+				if (split_setNumbers.get(0).length() == 1) {
+					modified_setNumber = "00" + split_setNumbers.get(0);
+				} else if (split_setNumbers.get(0).length() == 2) {
+					modified_setNumber = "0" + split_setNumbers.get(0);
+				} else {
+					modified_setNumber = split_setNumbers.get(0);
+				}
+
+				Url = "http://cybertechapps.com/ygo_library/image_database/"
+						+ split_initials.get(0) + "/" + split_initials.get(0)
+						+ "-EN" + modified_setNumber + ".png";
+			} else {
+				modified_setNumber = split_setNumbers.get(0);
+
+				Url = "http://cybertechapps.com/ygo_library/image_database/"
+						+ split_initials.get(0) + "/" + split_initials.get(0)
+						+ "-EN" + modified_setNumber + ".png";
+			}
+
+		} else {
+
+			if (passed_SetNumber.matches("[0-9]+")) {
+				if (passed_SetNumber.length() == 1) {
+					modified_setNumber = "00" + passed_SetNumber;
+				} else if (passed_SetNumber.length() == 2) {
+					modified_setNumber = "0" + passed_SetNumber;
+				} else {
+					modified_setNumber = passed_SetNumber;
+				}
+
+				Url = "http://cybertechapps.com/ygo_library/image_database/"
+						+ passed_SetInitial + "/" + passed_SetInitial + "-EN"
+						+ modified_setNumber + ".png";
+			} else {
+				modified_setNumber = passed_SetNumber;
+
+				Url = "http://cybertechapps.com/ygo_library/image_database/"
+						+ passed_SetInitial + "/" + passed_SetInitial + "-EN"
+						+ modified_setNumber + ".png";
+			}
+
+		}
+
+		return Url;
+
+	}

@@ -1,0 +1,22 @@
+PODS:
+  - FMDB/standalone (2.6):
+    - FMDB/standalone/default (= 2.6)
+  - FMDB/standalone/default (2.6):
+    - sqlite3
+  - Kingfisher (2.4.1)
+  - sqlite3 (3.11.1):
+    - sqlite3/common (= 3.11.1)
+  - sqlite3/common (3.11.1)
+
+DEPENDENCIES:
+  - FMDB/standalone
+  - Kingfisher (~> 2.4)
+
+SPEC CHECKSUMS:
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  sqlite3: 999671531811b14e0e9dc98e065e3a1e7727df55
+
+PODFILE CHECKSUM: 0f21c586909078ae7f0da33c50fd15acedf68724
+
+COCOAPODS: 1.0.0

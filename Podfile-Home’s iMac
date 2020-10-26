@@ -1,0 +1,9 @@
+platform :ios, ‘8.4’
+use_frameworks!
+pod ‘FMDB/standalone’
+
+target ‘Yugioh Library’ do
+  pod 'Kingfisher', '~> 2.4'
+end
+
+xcodeproj ‘Yugioh Library.xcodeproj’

@@ -1,0 +1,16 @@
+                                Check prices for Card Name
+
+let url = NSURL(string: "http://yugiohprices.com/api/get_card_prices/card_name")!
+let request = NSMutableURLRequest(URL: url)
+
+let session = NSURLSession.sharedSession()
+let task = session.dataTaskWithRequest(request) { data, response, error in
+if let response = response, data = data {
+print(response)
+print(String(data: data, encoding: NSUTF8StringEncoding))
+} else {
+print(error)
+}
+}
+
+task.resume()

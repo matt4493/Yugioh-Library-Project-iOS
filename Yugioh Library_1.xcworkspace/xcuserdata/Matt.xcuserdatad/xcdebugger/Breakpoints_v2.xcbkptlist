@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/Simple_Search.swift"
+            timestampString = "485484499.110498"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Simple_Search.tableView (__ObjC.UITableView, cellForRowAtIndexPath : __ObjC.NSIndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Simple_Search.swift"
+                  timestampString = "488930599.963532"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "1800">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Simple_Search.(tableView (__ObjC.UITableView, cellForRowAtIndexPath : __ObjC.NSIndexPath) -&gt; __ObjC.UITableViewCell).(closure #1)"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Simple_Search.swift"
+                  timestampString = "488930599.963858"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "215"
+                  endingLineNumber = "215"
+                  offsetFromSymbolStart = "2872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/Simple_Search.swift"
+            timestampString = "485484499.110498"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/Gallery_Search.swift"
+            timestampString = "485631243.085088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "Gallery_Search"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Gallery_Search.mainButton.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Gallery_Search.swift"
+                  timestampString = "488930599.967427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Gallery_Search.mainButton.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIBarButtonItem&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Gallery_Search.swift"
+                  timestampString = "488930599.967708"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Gallery_Search.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Yugioh_Library.Gallery_Search"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Gallery_Search.swift"
+                  timestampString = "488930599.967899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.Gallery_Search.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Yugioh_Library.Gallery_Search&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/Gallery_Search.swift"
+                  timestampString = "488930599.968095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/GalleryCell.swift"
+            timestampString = "488925832.718184"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "GalleryCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.GalleryCell.collection_image.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/GalleryCell.swift"
+                  timestampString = "488930599.971521"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.GalleryCell.collection_image.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/GalleryCell.swift"
+                  timestampString = "488930599.971721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.GalleryCell.init (frame : __C.CGRect) -&gt; Yugioh_Library.GalleryCell"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/GalleryCell.swift"
+                  timestampString = "488930599.971912"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yugioh_Library.GalleryCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Yugioh_Library.GalleryCell&gt;"
+                  moduleName = "Yugioh Library"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matt/OneDrive/App%20Dev/Mac/Projects/Yugioh%20Library/Yugioh%20Library/GalleryCell.swift"
+                  timestampString = "488930599.972096"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

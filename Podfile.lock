@@ -1,0 +1,30 @@
+PODS:
+  - FMDB/standalone (2.6.2):
+    - FMDB/standalone/default (= 2.6.2)
+    - FMDB/standalone/FTS (= 2.6.2)
+  - FMDB/standalone/default (2.6.2):
+    - sqlite3
+  - FMDB/standalone/FTS (2.6.2):
+    - sqlite3/fts
+  - HanekeSwift (0.10.1)
+  - Kingfisher (4.6.2)
+  - sqlite3 (3.13.0):
+    - sqlite3/common (= 3.13.0)
+  - sqlite3/common (3.13.0)
+  - sqlite3/fts (3.13.0):
+    - sqlite3/common
+
+DEPENDENCIES:
+  - FMDB/standalone
+  - HanekeSwift
+  - Kingfisher (~> 4.0)
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  sqlite3: c8b1b937fe823ab46411e471cdc1aa92d1b106ce
+
+PODFILE CHECKSUM: 1cdb34362e1c9d04a88fa8866014bc4dc1e583b8
+
+COCOAPODS: 1.4.0

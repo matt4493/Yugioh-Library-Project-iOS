@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3241795708042D1F4683AF45 /* Pods_Yugioh_Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958B8F9B75DCF92B1C98AB73 /* Pods_Yugioh_Library.framework */; };
+		C90CBB981CDF895800BBC5DD /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93FAB4D1CDCCEE900349DCA /* Haneke.framework */; };
+		C90CBB991CDF895800BBC5DD /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C93FAB4D1CDCCEE900349DCA /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C91CA0B01BC761A600A2A204 /* About_Banlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91CA0AF1BC761A600A2A204 /* About_Banlist.swift */; };
+		C91F49FE1C2902BE00DDEC5E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F49FD1C2902BE00DDEC5E /* Singleton.swift */; };
+		C9292F471BC7463D00ECA1C2 /* banlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9292F461BC7463D00ECA1C2 /* banlistController.swift */; };
+		C9292F4D1BC746FD00ECA1C2 /* Forbidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9292F491BC746FD00ECA1C2 /* Forbidden.swift */; };
+		C9292F4E1BC746FD00ECA1C2 /* Limited.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9292F4A1BC746FD00ECA1C2 /* Limited.swift */; };
+		C9292F4F1BC746FD00ECA1C2 /* SemiLimited.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9292F4B1BC746FD00ECA1C2 /* SemiLimited.swift */; };
+		C9292F511BC74BC400ECA1C2 /* About YGO Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9292F501BC74BC400ECA1C2 /* About YGO Library.swift */; };
+		C9461A2D1BE9C6790064F601 /* CardInfo_Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9461A2A1BE9C6790064F601 /* CardInfo_Adapter.swift */; };
+		C9461A2E1BE9C6790064F601 /* CardInfo_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9461A2B1BE9C6790064F601 /* CardInfo_Cell.swift */; };
+		C9461A2F1BE9C6790064F601 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9461A2C1BE9C6790064F601 /* Util.swift */; };
+		C94E6FD41C37876900207A0D /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FD31C37876900207A0D /* Type.swift */; };
+		C94E6FD61C37877900207A0D /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FD51C37877900207A0D /* Attribute.swift */; };
+		C94E6FD81C37878800207A0D /* SummonRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FD71C37878800207A0D /* SummonRequirements.swift */; };
+		C94E6FDA1C37879200207A0D /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FD91C37879200207A0D /* Description.swift */; };
+		C94E6FDC1C37879C00207A0D /* SpellSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FDB1C37879C00207A0D /* SpellSpeed.swift */; };
+		C94E6FDE1C3787A700207A0D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FDD1C3787A700207A0D /* Level.swift */; };
+		C94E6FE01C3787B100207A0D /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FDF1C3787B100207A0D /* Rank.swift */; };
+		C94E6FE21C3787BD00207A0D /* Atk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FE11C3787BD00207A0D /* Atk.swift */; };
+		C94E6FE41C3787C400207A0D /* Def.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FE31C3787C400207A0D /* Def.swift */; };
+		C94E6FE61C3787D200207A0D /* Setini.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FE51C3787D200207A0D /* Setini.swift */; };
+		C94E6FE81C3787D900207A0D /* SetNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FE71C3787D900207A0D /* SetNumber.swift */; };
+		C94E6FEA1C3787E400207A0D /* CardPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FE91C3787E400207A0D /* CardPass.swift */; };
+		C94E6FEC1C3787ED00207A0D /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FEB1C3787ED00207A0D /* Rarity.swift */; };
+		C94E6FEE1C3787F700207A0D /* Legality.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E6FED1C3787F700207A0D /* Legality.swift */; };
+		C9549DCA1C9F4BF3005FB27E /* YugiohPrices_API in Resources */ = {isa = PBXBuildFile; fileRef = C9549DC91C9F4BF3005FB27E /* YugiohPrices_API */; };
+		C955166F1C2A4F7B00489FAA /* Card_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C955166E1C2A4F7B00489FAA /* Card_View.swift */; };
+		C957915F1CE5EFEA00F4B60E /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957915E1CE5EFEA00F4B60E /* DeviceModel.swift */; };
+		C96357631BB745D0002B2011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96357621BB745D0002B2011 /* AppDelegate.swift */; };
+		C96357651BB745D0002B2011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96357641BB745D0002B2011 /* ViewController.swift */; };
+		C96357681BB745D0002B2011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96357661BB745D0002B2011 /* Main.storyboard */; };
+		C963576A1BB745D0002B2011 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96357691BB745D0002B2011 /* Images.xcassets */; };
+		C963576D1BB745D0002B2011 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C963576B1BB745D0002B2011 /* LaunchScreen.xib */; };
+		C96357791BB745D0002B2011 /* Yugioh_LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96357781BB745D0002B2011 /* Yugioh_LibraryTests.swift */; };
+		C96CF01C1BCFFE4300262E8D /* Card_Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96CF01B1BCFFE4300262E8D /* Card_Adapter.swift */; };
+		C98983681BEFF3F900AF3670 /* yugiohdb.jet in Resources */ = {isa = PBXBuildFile; fileRef = C98983661BEFF31100AF3670 /* yugiohdb.jet */; };
+		C98B4CE31CE3E25E00E3294D /* main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B4CE11CE3E25E00E3294D /* main_iPad.storyboard */; };
+		C99086171C10E9C700EEE569 /* Advance_Search_Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99086161C10E9C700EEE569 /* Advance_Search_Results.swift */; };
+		C9B69EF01C48BB9300ACE001 /* CardInfo_Cell_aboutBanlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B69EEF1C48BB9300ACE001 /* CardInfo_Cell_aboutBanlist.swift */; };
+		C9B715E21CDCF714007C91E1 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93FAB4D1CDCCEE900349DCA /* Haneke.framework */; };
+		C9D3451D1C87D75500C303FF /* Java Code in Resources */ = {isa = PBXBuildFile; fileRef = C9D3451C1C87D75500C303FF /* Java Code */; };
+		C9D694381C3C93A500643F37 /* CardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D694371C3C93A500643F37 /* CardName.swift */; };
+		C9EB50B31BBC3CDB00B2AE0F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EB50B21BBC3CDB00B2AE0F /* SWRevealViewController.m */; };
+		C9EB50B51BBC3D3100B2AE0F /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB50B41BBC3D3100B2AE0F /* BackTableVC.swift */; };
+		C9EB50BD1BBC3DCF00B2AE0F /* Simple_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB50BC1BBC3DCF00B2AE0F /* Simple_Search.swift */; };
+		C9EB50C11BBC3E9000B2AE0F /* Advance_Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB50C01BBC3E9000B2AE0F /* Advance_Search.swift */; };
+		C9EF538E1CC3A3BD00867D6B /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF538D1CC3A3BD00867D6B /* ImageURL.swift */; };
+		C9EF53931CC3A57900867D6B /* getImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF53921CC3A57900867D6B /* getImageURL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90CBB9A1CDF895800BBC5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		C93FAB4C1CDCCEE900349DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = "Haneke-iOS";
+		};
+		C93FAB4E1CDCCEE900349DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6393C5F71C3B229200EB1FD8;
+			remoteInfo = "Haneke-tvOS";
+		};
+		C93FAB501CDCCEE900349DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		C93FAB521CDCCEE900349DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		C96357731BB745D0002B2011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96357551BB745D0002B2011 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C963575C1BB745D0002B2011;
+			remoteInfo = "Yugioh Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C91FB5FB1C8420CA008C2CCA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C90CBB991CDF895800BBC5DD /* Haneke.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		530749EAF7FE8B76F1675A27 /* Pods-Yugioh Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yugioh Library/Pods-Yugioh Library.debug.xcconfig"; sourceTree = "<group>"; };
+		81DA4FEFF204FF645BAA2486 /* Pods-Yugioh Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yugioh Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yugioh Library/Pods-Yugioh Library.release.xcconfig"; sourceTree = "<group>"; };
+		958B8F9B75DCF92B1C98AB73 /* Pods_Yugioh_Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yugioh_Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91CA0AF1BC761A600A2A204 /* About_Banlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About_Banlist.swift; sourceTree = "<group>"; };
+		C91F49FD1C2902BE00DDEC5E /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		C9292F461BC7463D00ECA1C2 /* banlistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = banlistController.swift; sourceTree = "<group>"; };
+		C9292F491BC746FD00ECA1C2 /* Forbidden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forbidden.swift; sourceTree = "<group>"; };
+		C9292F4A1BC746FD00ECA1C2 /* Limited.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limited.swift; sourceTree = "<group>"; };
+		C9292F4B1BC746FD00ECA1C2 /* SemiLimited.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiLimited.swift; sourceTree = "<group>"; };
+		C9292F501BC74BC400ECA1C2 /* About YGO Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "About YGO Library.swift"; sourceTree = "<group>"; };
+		C934042B1C865301006A09F1 /* FMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "../../../Libraries and Frameworks/HanekeSwift-master/Haneke.xcodeproj"; sourceTree = "<group>"; };
+		C9461A2A1BE9C6790064F601 /* CardInfo_Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfo_Adapter.swift; sourceTree = "<group>"; };
+		C9461A2B1BE9C6790064F601 /* CardInfo_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfo_Cell.swift; sourceTree = "<group>"; };
+		C9461A2C1BE9C6790064F601 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		C94A8E751BCB61220013E981 /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		C94A8E761BCB61220013E981 /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		C94A8E771BCB61220013E981 /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
+		C94A8E781BCB61220013E981 /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
+		C94A8E791BCB61220013E981 /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
+		C94A8E7B1BCB61220013E981 /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		C94A8E7C1BCB61220013E981 /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		C94A8E7E1BCB61220013E981 /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
+		C94A8E7F1BCB61220013E981 /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
+		C94E6FD31C37876900207A0D /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		C94E6FD51C37877900207A0D /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		C94E6FD71C37878800207A0D /* SummonRequirements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummonRequirements.swift; sourceTree = "<group>"; };
+		C94E6FD91C37879200207A0D /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		C94E6FDB1C37879C00207A0D /* SpellSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellSpeed.swift; sourceTree = "<group>"; };
+		C94E6FDD1C3787A700207A0D /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		C94E6FDF1C3787B100207A0D /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		C94E6FE11C3787BD00207A0D /* Atk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atk.swift; sourceTree = "<group>"; };
+		C94E6FE31C3787C400207A0D /* Def.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Def.swift; sourceTree = "<group>"; };
+		C94E6FE51C3787D200207A0D /* Setini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setini.swift; sourceTree = "<group>"; };
+		C94E6FE71C3787D900207A0D /* SetNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNumber.swift; sourceTree = "<group>"; };
+		C94E6FE91C3787E400207A0D /* CardPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPass.swift; sourceTree = "<group>"; };
+		C94E6FEB1C3787ED00207A0D /* Rarity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
+		C94E6FED1C3787F700207A0D /* Legality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legality.swift; sourceTree = "<group>"; };
+		C9549DC91C9F4BF3005FB27E /* YugiohPrices_API */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YugiohPrices_API; sourceTree = "<group>"; };
+		C955166E1C2A4F7B00489FAA /* Card_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_View.swift; sourceTree = "<group>"; };
+		C957915E1CE5EFEA00F4B60E /* DeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceModel.swift; path = ../DeviceModel.swift; sourceTree = "<group>"; };
+		C963575D1BB745D0002B2011 /* Yugioh Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yugioh Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96357611BB745D0002B2011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96357621BB745D0002B2011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C96357641BB745D0002B2011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C96357671BB745D0002B2011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C96357691BB745D0002B2011 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C963576C1BB745D0002B2011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C96357721BB745D0002B2011 /* Yugioh LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yugioh LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96357771BB745D0002B2011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96357781BB745D0002B2011 /* Yugioh_LibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yugioh_LibraryTests.swift; sourceTree = "<group>"; };
+		C96CF01B1BCFFE4300262E8D /* Card_Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card_Adapter.swift; sourceTree = "<group>"; };
+		C98983661BEFF31100AF3670 /* yugiohdb.jet */ = {isa = PBXFileReference; lastKnownFileType = file; path = yugiohdb.jet; sourceTree = "<group>"; };
+		C98B4CE21CE3E25E00E3294D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Yugioh Library/Base.lproj/main_iPad.storyboard"; sourceTree = "<group>"; };
+		C99086161C10E9C700EEE569 /* Advance_Search_Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advance_Search_Results.swift; sourceTree = "<group>"; };
+		C9B69EEF1C48BB9300ACE001 /* CardInfo_Cell_aboutBanlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfo_Cell_aboutBanlist.swift; sourceTree = "<group>"; };
+		C9D3451C1C87D75500C303FF /* Java Code */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Java Code"; sourceTree = "<group>"; };
+		C9D694371C3C93A500643F37 /* CardName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardName.swift; sourceTree = "<group>"; };
+		C9EB50B01BBC3CDB00B2AE0F /* Yugioh Library-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yugioh Library-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9EB50B11BBC3CDB00B2AE0F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C9EB50B21BBC3CDB00B2AE0F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C9EB50B41BBC3D3100B2AE0F /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		C9EB50BC1BBC3DCF00B2AE0F /* Simple_Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simple_Search.swift; sourceTree = "<group>"; };
+		C9EB50C01BBC3E9000B2AE0F /* Advance_Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advance_Search.swift; sourceTree = "<group>"; };
+		C9EB50C51BBC462E00B2AE0F /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		C9EB50C61BBC462E00B2AE0F /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		C9EF538D1CC3A3BD00867D6B /* ImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		C9EF53921CC3A57900867D6B /* getImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getImageURL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C963575A1BB745D0002B2011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B715E21CDCF714007C91E1 /* Haneke.framework in Frameworks */,
+				C90CBB981CDF895800BBC5DD /* Haneke.framework in Frameworks */,
+				3241795708042D1F4683AF45 /* Pods_Yugioh_Library.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C963576F1BB745D0002B2011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C473CAA720CEE3CEA15C2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				958B8F9B75DCF92B1C98AB73 /* Pods_Yugioh_Library.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C91CA0AA1BC75FFF00A2A204 /* Banlist Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9292F461BC7463D00ECA1C2 /* banlistController.swift */,
+				C9292F491BC746FD00ECA1C2 /* Forbidden.swift */,
+				C9292F4A1BC746FD00ECA1C2 /* Limited.swift */,
+				C9292F4B1BC746FD00ECA1C2 /* SemiLimited.swift */,
+				C91CA0AF1BC761A600A2A204 /* About_Banlist.swift */,
+			);
+			name = "Banlist Files";
+			sourceTree = "<group>";
+		};
+		C91CA0AB1BC7602800A2A204 /* Simple Search Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB50BC1BBC3DCF00B2AE0F /* Simple_Search.swift */,
+			);
+			name = "Simple Search Files";
+			sourceTree = "<group>";
+		};
+		C91CA0AC1BC7603600A2A204 /* Advance Search Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB50C01BBC3E9000B2AE0F /* Advance_Search.swift */,
+				C99086161C10E9C700EEE569 /* Advance_Search_Results.swift */,
+			);
+			name = "Advance Search Files";
+			sourceTree = "<group>";
+		};
+		C93FAB461CDCCEE800349DCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C93FAB4D1CDCCEE900349DCA /* Haneke.framework */,
+				C93FAB4F1CDCCEE900349DCA /* Haneke.framework */,
+				C93FAB511CDCCEE900349DCA /* HanekeTests.xctest */,
+				C93FAB531CDCCEE900349DCA /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94A8E721BCB61220013E981 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C94A8E731BCB61220013E981 /* extra */,
+				C94A8E801BCB61220013E981 /* fmdb */,
+				C94A8E8C1BCB61220013E981 /* sample */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C94A8E731BCB61220013E981 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				C94A8E741BCB61220013E981 /* fts3 */,
+				C94A8E7A1BCB61220013E981 /* InMemoryOnDiskIO */,
+				C94A8E7D1BCB61220013E981 /* Swift extensions */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		C94A8E741BCB61220013E981 /* fts3 */ = {
+			isa = PBXGroup;
+			children = (
+				C94A8E751BCB61220013E981 /* FMDatabase+FTS3.h */,
+				C94A8E761BCB61220013E981 /* FMDatabase+FTS3.m */,
+				C94A8E771BCB61220013E981 /* FMTokenizers.h */,
+				C94A8E781BCB61220013E981 /* FMTokenizers.m */,
+				C94A8E791BCB61220013E981 /* fts3_tokenizer.h */,
+			);
+			path = fts3;
+			sourceTree = "<group>";
+		};
+		C94A8E7A1BCB61220013E981 /* InMemoryOnDiskIO */ = {
+			isa = PBXGroup;
+			children = (
+				C94A8E7B1BCB61220013E981 /* FMDatabase+InMemoryOnDiskIO.h */,
+				C94A8E7C1BCB61220013E981 /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = InMemoryOnDiskIO;
+			sourceTree = "<group>";
+		};
+		C94A8E7D1BCB61220013E981 /* Swift extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C94A8E7E1BCB61220013E981 /* FMDatabaseAdditionsVariadic.swift */,
+				C94A8E7F1BCB61220013E981 /* FMDatabaseVariadic.swift */,
+			);
+			path = "Swift extensions";
+			sourceTree = "<group>";
+		};
+		C94A8E801BCB61220013E981 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C934042B1C865301006A09F1 /* FMDB.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		C94A8E8C1BCB61220013E981 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		C94E6FD01C3786BF00207A0D /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				C91F49FD1C2902BE00DDEC5E /* Singleton.swift */,
+				C94E6FD31C37876900207A0D /* Type.swift */,
+				C94E6FD51C37877900207A0D /* Attribute.swift */,
+				C94E6FD71C37878800207A0D /* SummonRequirements.swift */,
+				C94E6FD91C37879200207A0D /* Description.swift */,
+				C94E6FDB1C37879C00207A0D /* SpellSpeed.swift */,
+				C94E6FDD1C3787A700207A0D /* Level.swift */,
+				C94E6FDF1C3787B100207A0D /* Rank.swift */,
+				C94E6FE11C3787BD00207A0D /* Atk.swift */,
+				C94E6FE31C3787C400207A0D /* Def.swift */,
+				C94E6FE51C3787D200207A0D /* Setini.swift */,
+				C94E6FE71C3787D900207A0D /* SetNumber.swift */,
+				C94E6FE91C3787E400207A0D /* CardPass.swift */,
+				C94E6FEB1C3787ED00207A0D /* Rarity.swift */,
+				C94E6FED1C3787F700207A0D /* Legality.swift */,
+				C9D694371C3C93A500643F37 /* CardName.swift */,
+				C9EF538D1CC3A3BD00867D6B /* ImageURL.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		C96357541BB745D0002B2011 = {
+			isa = PBXGroup;
+			children = (
+				C963575F1BB745D0002B2011 /* Yugioh Library */,
+				C96357751BB745D0002B2011 /* Yugioh LibraryTests */,
+				C963575E1BB745D0002B2011 /* Products */,
+				CB0E597E8DAE1A90155DD39C /* Pods */,
+				7C473CAA720CEE3CEA15C2E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C963575E1BB745D0002B2011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C963575D1BB745D0002B2011 /* Yugioh Library.app */,
+				C96357721BB745D0002B2011 /* Yugioh LibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C963575F1BB745D0002B2011 /* Yugioh Library */ = {
+			isa = PBXGroup;
+			children = (
+				C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */,
+				C9D3451C1C87D75500C303FF /* Java Code */,
+				C94E6FD01C3786BF00207A0D /* Singletons */,
+				C94A8E721BCB61220013E981 /* src */,
+				C91CA0AC1BC7603600A2A204 /* Advance Search Files */,
+				C91CA0AB1BC7602800A2A204 /* Simple Search Files */,
+				C91CA0AA1BC75FFF00A2A204 /* Banlist Files */,
+				C96357621BB745D0002B2011 /* AppDelegate.swift */,
+				C96357641BB745D0002B2011 /* ViewController.swift */,
+				C9461A2A1BE9C6790064F601 /* CardInfo_Adapter.swift */,
+				C9461A2B1BE9C6790064F601 /* CardInfo_Cell.swift */,
+				C98983661BEFF31100AF3670 /* yugiohdb.jet */,
+				C9461A2C1BE9C6790064F601 /* Util.swift */,
+				C96CF01B1BCFFE4300262E8D /* Card_Adapter.swift */,
+				C957915E1CE5EFEA00F4B60E /* DeviceModel.swift */,
+				C98B4CE11CE3E25E00E3294D /* main_iPad.storyboard */,
+				C96357661BB745D0002B2011 /* Main.storyboard */,
+				C96357691BB745D0002B2011 /* Images.xcassets */,
+				C963576B1BB745D0002B2011 /* LaunchScreen.xib */,
+				C9292F501BC74BC400ECA1C2 /* About YGO Library.swift */,
+				C9EB50B41BBC3D3100B2AE0F /* BackTableVC.swift */,
+				C955166E1C2A4F7B00489FAA /* Card_View.swift */,
+				C9B69EEF1C48BB9300ACE001 /* CardInfo_Cell_aboutBanlist.swift */,
+				C96357601BB745D0002B2011 /* Supporting Files */,
+				C9549DC91C9F4BF3005FB27E /* YugiohPrices_API */,
+				C9EF53921CC3A57900867D6B /* getImageURL.swift */,
+			);
+			path = "Yugioh Library";
+			sourceTree = "<group>";
+		};
+		C96357601BB745D0002B2011 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB50C51BBC462E00B2AE0F /* CustomObject.h */,
+				C9EB50C61BBC462E00B2AE0F /* CustomObject.m */,
+				C9EB50B11BBC3CDB00B2AE0F /* SWRevealViewController.h */,
+				C9EB50B21BBC3CDB00B2AE0F /* SWRevealViewController.m */,
+				C96357611BB745D0002B2011 /* Info.plist */,
+				C9EB50B01BBC3CDB00B2AE0F /* Yugioh Library-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C96357751BB745D0002B2011 /* Yugioh LibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				C96357781BB745D0002B2011 /* Yugioh_LibraryTests.swift */,
+				C96357761BB745D0002B2011 /* Supporting Files */,
+			);
+			path = "Yugioh LibraryTests";
+			sourceTree = "<group>";
+		};
+		C96357761BB745D0002B2011 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C96357771BB745D0002B2011 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB0E597E8DAE1A90155DD39C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				530749EAF7FE8B76F1675A27 /* Pods-Yugioh Library.debug.xcconfig */,
+				81DA4FEFF204FF645BAA2486 /* Pods-Yugioh Library.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C963575C1BB745D0002B2011 /* Yugioh Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C963577C1BB745D0002B2011 /* Build configuration list for PBXNativeTarget "Yugioh Library" */;
+			buildPhases = (
+				6609B64C9B16A442EC247EBE /* 📦 Check Pods Manifest.lock */,
+				C96357591BB745D0002B2011 /* Sources */,
+				C963575A1BB745D0002B2011 /* Frameworks */,
+				C963575B1BB745D0002B2011 /* Resources */,
+				C91FB5FB1C8420CA008C2CCA /* CopyFiles */,
+				7403E6C5089DA2A6725D3D19 /* 📦 Embed Pods Frameworks */,
+				89859C622BF052DEF5057E87 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90CBB9B1CDF895800BBC5DD /* PBXTargetDependency */,
+			);
+			name = "Yugioh Library";
+			productName = "Yugioh Library";
+			productReference = C963575D1BB745D0002B2011 /* Yugioh Library.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96357711BB745D0002B2011 /* Yugioh LibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C963577F1BB745D0002B2011 /* Build configuration list for PBXNativeTarget "Yugioh LibraryTests" */;
+			buildPhases = (
+				C963576E1BB745D0002B2011 /* Sources */,
+				C963576F1BB745D0002B2011 /* Frameworks */,
+				C96357701BB745D0002B2011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96357741BB745D0002B2011 /* PBXTargetDependency */,
+			);
+			name = "Yugioh LibraryTests";
+			productName = "Yugioh LibraryTests";
+			productReference = C96357721BB745D0002B2011 /* Yugioh LibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96357551BB745D0002B2011 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = CybertechApps;
+				TargetAttributes = {
+					C963575C1BB745D0002B2011 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8H4WS55YA2;
+					};
+					C96357711BB745D0002B2011 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C963575C1BB745D0002B2011;
+					};
+				};
+			};
+			buildConfigurationList = C96357581BB745D0002B2011 /* Build configuration list for PBXProject "Yugioh Library" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C96357541BB745D0002B2011;
+			productRefGroup = C963575E1BB745D0002B2011 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C93FAB461CDCCEE800349DCA /* Products */;
+					ProjectRef = C93FAB451CDCCEE800349DCA /* Haneke.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C963575C1BB745D0002B2011 /* Yugioh Library */,
+				C96357711BB745D0002B2011 /* Yugioh LibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C93FAB4D1CDCCEE900349DCA /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = C93FAB4C1CDCCEE900349DCA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C93FAB4F1CDCCEE900349DCA /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = C93FAB4E1CDCCEE900349DCA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C93FAB511CDCCEE900349DCA /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = C93FAB501CDCCEE900349DCA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C93FAB531CDCCEE900349DCA /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = C93FAB521CDCCEE900349DCA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C963575B1BB745D0002B2011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98983681BEFF3F900AF3670 /* yugiohdb.jet in Resources */,
+				C98B4CE31CE3E25E00E3294D /* main_iPad.storyboard in Resources */,
+				C96357681BB745D0002B2011 /* Main.storyboard in Resources */,
+				C9549DCA1C9F4BF3005FB27E /* YugiohPrices_API in Resources */,
+				C9D3451D1C87D75500C303FF /* Java Code in Resources */,
+				C963576D1BB745D0002B2011 /* LaunchScreen.xib in Resources */,
+				C963576A1BB745D0002B2011 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96357701BB745D0002B2011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6609B64C9B16A442EC247EBE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7403E6C5089DA2A6725D3D19 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yugioh Library/Pods-Yugioh Library-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89859C622BF052DEF5057E87 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yugioh Library/Pods-Yugioh Library-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96357591BB745D0002B2011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9EB50C11BBC3E9000B2AE0F /* Advance_Search.swift in Sources */,
+				C91F49FE1C2902BE00DDEC5E /* Singleton.swift in Sources */,
+				C94E6FEC1C3787ED00207A0D /* Rarity.swift in Sources */,
+				C9EF538E1CC3A3BD00867D6B /* ImageURL.swift in Sources */,
+				C9EF53931CC3A57900867D6B /* getImageURL.swift in Sources */,
+				C96357651BB745D0002B2011 /* ViewController.swift in Sources */,
+				C91CA0B01BC761A600A2A204 /* About_Banlist.swift in Sources */,
+				C99086171C10E9C700EEE569 /* Advance_Search_Results.swift in Sources */,
+				C9D694381C3C93A500643F37 /* CardName.swift in Sources */,
+				C9461A2F1BE9C6790064F601 /* Util.swift in Sources */,
+				C9EB50BD1BBC3DCF00B2AE0F /* Simple_Search.swift in Sources */,
+				C9461A2E1BE9C6790064F601 /* CardInfo_Cell.swift in Sources */,
+				C9292F471BC7463D00ECA1C2 /* banlistController.swift in Sources */,
+				C9292F4D1BC746FD00ECA1C2 /* Forbidden.swift in Sources */,
+				C96CF01C1BCFFE4300262E8D /* Card_Adapter.swift in Sources */,
+				C94E6FE21C3787BD00207A0D /* Atk.swift in Sources */,
+				C94E6FE61C3787D200207A0D /* Setini.swift in Sources */,
+				C957915F1CE5EFEA00F4B60E /* DeviceModel.swift in Sources */,
+				C94E6FE01C3787B100207A0D /* Rank.swift in Sources */,
+				C9461A2D1BE9C6790064F601 /* CardInfo_Adapter.swift in Sources */,
+				C94E6FE81C3787D900207A0D /* SetNumber.swift in Sources */,
+				C94E6FDC1C37879C00207A0D /* SpellSpeed.swift in Sources */,
+				C94E6FDE1C3787A700207A0D /* Level.swift in Sources */,
+				C96357631BB745D0002B2011 /* AppDelegate.swift in Sources */,
+				C9B69EF01C48BB9300ACE001 /* CardInfo_Cell_aboutBanlist.swift in Sources */,
+				C9292F4E1BC746FD00ECA1C2 /* Limited.swift in Sources */,
+				C94E6FDA1C37879200207A0D /* Description.swift in Sources */,
+				C94E6FE41C3787C400207A0D /* Def.swift in Sources */,
+				C94E6FD81C37878800207A0D /* SummonRequirements.swift in Sources */,
+				C94E6FEE1C3787F700207A0D /* Legality.swift in Sources */,
+				C955166F1C2A4F7B00489FAA /* Card_View.swift in Sources */,
+				C9EB50B51BBC3D3100B2AE0F /* BackTableVC.swift in Sources */,
+				C94E6FD41C37876900207A0D /* Type.swift in Sources */,
+				C94E6FEA1C3787E400207A0D /* CardPass.swift in Sources */,
+				C9292F511BC74BC400ECA1C2 /* About YGO Library.swift in Sources */,
+				C94E6FD61C37877900207A0D /* Attribute.swift in Sources */,
+				C9292F4F1BC746FD00ECA1C2 /* SemiLimited.swift in Sources */,
+				C9EB50B31BBC3CDB00B2AE0F /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C963576E1BB745D0002B2011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96357791BB745D0002B2011 /* Yugioh_LibraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90CBB9B1CDF895800BBC5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Haneke-iOS";
+			targetProxy = C90CBB9A1CDF895800BBC5DD /* PBXContainerItemProxy */;
+		};
+		C96357741BB745D0002B2011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C963575C1BB745D0002B2011 /* Yugioh Library */;
+			targetProxy = C96357731BB745D0002B2011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C96357661BB745D0002B2011 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96357671BB745D0002B2011 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C963576B1BB745D0002B2011 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C963576C1BB745D0002B2011 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C98B4CE11CE3E25E00E3294D /* main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C98B4CE21CE3E25E00E3294D /* Base */,
+			);
+			name = main_iPad.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C963577A1BB745D0002B2011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C963577B1BB745D0002B2011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C963577D1BB745D0002B2011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530749EAF7FE8B76F1675A27 /* Pods-Yugioh Library.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/sqlite3\"",
+					"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+				);
+				INFOPLIST_FILE = "Yugioh Library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cybertech.productions.Yugioh-Library1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yugioh Library/Yugioh Library-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C963577E1BB745D0002B2011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DA4FEFF204FF645BAA2486 /* Pods-Yugioh Library.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"\"${PODS_ROOT}/Headers/Public/sqlite3\"",
+					"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+				);
+				INFOPLIST_FILE = "Yugioh Library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cybertech.productions.Yugioh-Library1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yugioh Library/Yugioh Library-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C96357801BB745D0002B2011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Yugioh LibraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh Library.app/Yugioh Library";
+			};
+			name = Debug;
+		};
+		C96357811BB745D0002B2011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Yugioh LibraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yugioh Library.app/Yugioh Library";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96357581BB745D0002B2011 /* Build configuration list for PBXProject "Yugioh Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C963577A1BB745D0002B2011 /* Debug */,
+				C963577B1BB745D0002B2011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C963577C1BB745D0002B2011 /* Build configuration list for PBXNativeTarget "Yugioh Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C963577D1BB745D0002B2011 /* Debug */,
+				C963577E1BB745D0002B2011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C963577F1BB745D0002B2011 /* Build configuration list for PBXNativeTarget "Yugioh LibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96357801BB745D0002B2011 /* Debug */,
+				C96357811BB745D0002B2011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C96357551BB745D0002B2011 /* Project object */;
+}

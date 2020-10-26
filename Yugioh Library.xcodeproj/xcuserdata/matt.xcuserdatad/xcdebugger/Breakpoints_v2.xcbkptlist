@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/Card_Adapter.swift"
+            timestampString = "491240319.83055"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "513"
+            endingLineNumber = "513"
+            landmarkName = "test(_:card_name:description:card_sub_type:main_card_type:card_secondary_type:card_secondary_type_clearCheck:attribute_type:level_rank_stars:lessThanATK:greaterThanATK:lessThanDEF:greaterThanDEF:passCodeNum:setname:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Yugioh Library/Card_Adapter.swift"
+            timestampString = "491240319.83055"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1059"
+            endingLineNumber = "1059"
+            landmarkName = "test(_:card_name:description:card_sub_type:main_card_type:card_secondary_type:card_secondary_type_clearCheck:attribute_type:level_rank_stars:lessThanATK:greaterThanATK:lessThanDEF:greaterThanDEF:passCodeNum:setname:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
